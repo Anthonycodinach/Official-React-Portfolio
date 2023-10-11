@@ -1,0 +1,82 @@
+.project-img {
+    height: 300px;
+    width: 500px;
+    margin-top: 0px;
+    border: #FFF5DE solid 3px;
+    border-radius: 5px;
+}
+
+.project-img:hover {
+    opacity: 0.8;
+}
+
+.project-welcome {
+    font-size: 150px;
+    color: #EBA70E;
+    margin: 0;
+    margin-left: 25px;
+    letter-spacing: 0.05em;
+    text-shadow: rgb(196, 57, 29) 7px 3px 0px
+}
+
+.project-title {
+    margin-top: 10px;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(196, 57, 29);
+    text-shadow: black 4px 1px 0
+}
+
+.projects-cointainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.project-cointainer {
+    width: 500px;
+    display: flex;
+    display: block;
+}
+
+.project-text {
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    color: #EBA70E;
+    text-shadow: black 4px 1px 0
+}
+
+.github-logo {
+    height: 60px;
+    width: 60px;
+    margin-top: -20px;
+    opacity: 0.9;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+.github-logo:hover {
+    opacity: 0.5;
+}
+
+#projects-page-title-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* media queries */
+@media (max-width: 1425px) {
+    .project-cointainer {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 670px) {
+    .project-welcome {
+        font-size: 80px;
+    }
+}

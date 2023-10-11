@@ -1,0 +1,71 @@
+.body-cointainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  p {
+    font-size: 40px;
+    color: #EBA70E;
+    margin-top: 40px;
+    text-shadow: black 4px 1px 0
+  }
+  
+  a img {
+    height: 120px;
+    width: 300px;
+    margin-top: 80px;
+  }
+  
+  #content {
+    display: flex;
+    display: block;
+  }
+  
+  #textCointainer {
+    width: 60%;
+  }
+  
+  .wrapper {
+    width: 95%;
+  }
+  
+  /* Typewriter styling */
+  .welcomeText {
+    font-size: 230px;
+    color: #EBA70E;
+    animation: typing 2s steps(15) 1s 1 normal both, blinking-cursor 1s steps(8) infinite normal;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: 5px solid white;
+    letter-spacing: 0.05em;
+    position: relative;
+    text-shadow: rgb(196, 57, 29) 7px 5px 0
+  }
+  
+  
+  @keyframes typing {
+    from {
+        width: 0
+    }
+  
+    to {
+        width: 50%;
+    }
+  }
+  
+  @keyframes blinking-cursor {
+  
+    from,
+    to {
+        border-color: transparent;
+    }
+  
+    50% {
+        border-color: white;
+    }
+  }
