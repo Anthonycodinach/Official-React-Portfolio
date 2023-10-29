@@ -1,12 +1,22 @@
 import React from 'react';
 import logo from '../../../launch.png';
 import "./style.css"
+import ReactTyped from "react-typed";
+
 
 export default function Home({ currentPage, handlePageChange }) {
   return (
     <div className="body-cointainer">
       <div className="wrapper">
-        <h1 className="welcomeText anim-typewriter"> Welcome. </h1>
+      <h1 className="welcomeText">
+        {" "}
+        <ReactTyped
+          strings={["Welcome"]}
+          typeSpeed={100}
+          cursorChar="|"
+          showCursor={true}
+        />
+      </h1>
       </div>
       <div id="textCointainer">
         <p>

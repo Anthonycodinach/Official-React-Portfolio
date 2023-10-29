@@ -7,105 +7,247 @@
 body {
   background-color: #4C2D1D;
   background-image:
-      linear-gradient(0deg, transparent 9%,
-          rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 12%, transparent 13%, transparent 29%),
-      linear-gradient(90deg, transparent 9%,
-          rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 12%, transparent 13%, transparent 29%),
-      linear-gradient(0deg, transparent, 100%, rgba(0, 0, 0, .5));
+    linear-gradient(0deg, transparent 9%,
+      rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 12%, transparent 13%, transparent 29%),
+    linear-gradient(90deg, transparent 9%,
+      rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 12%, transparent 13%, transparent 29%),
+    linear-gradient(0deg, transparent, 100%, rgba(0, 0, 0, .5));
   background-size: 90px 90px;
 }
 
 nav {
-width: 100%;
-position: relative;
-top:1030px;
+  width: 100%;
+  position: absolute;
+  top: 1080px;
 }
+
 
 nav ul {
   display: flex;
- width: 100%;
- justify-content: center;
- list-style: none;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
 }
 
 nav li {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 nav a {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
+  opacity: 0.5;
+  text-decoration: none;
+  border-left: white solid 2px;
+  padding-left: 12px;
 }
 
-  /* contact page */
-  .contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #EBA70E;
+.borderRight {
+  border-right: white solid 2px;
+  padding-right: 12px;
+}
+
+nav a:hover {
+  opacity: 0.9;
+  color: rgb(196, 57, 29);
+}
+
+/* contact page */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #EBA70E;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(196, 57, 29);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.typed-cursor {
+  opacity: 0.8;
+font-size: 160px;
+font-weight: 100;
+color: #fff;
+  text-shadow: none;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+}
+
+/* Resume Page */
+.resume-cointainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-h1 {
+  font-size: 80px;
+  color: #EBA70E;
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-shadow: rgb(196, 57, 29) 4px 2px 0px
+}
+
+.resume-img {
+  height: 800px;
+  width: 600px;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+/* Media Queries  */
+@media only screen and (max-width: 999px){
+  .welcomeText {
+    font-size: 70px;
+    text-shadow: rgb(196, 57, 29) 3px 2px 0
   }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  a img {
+    height: 75px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
+  p {
+    font-size: 20px;
+    color: #EBA70E;
+    margin-top: 20px;
+    text-shadow: black 3px 2px 0
   }
-  
-  .form-group {
-    margin-bottom: 20px;
+  .typed-cursor {
+    opacity: 0.8;
+  font-size: 60px;  
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
   }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input[type='text'],
-  input[type='email'],
-  textarea {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
+  nav {
     width: 100%;
-    padding: 10px;
-    background-color: rgb(196, 57, 29);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    position: absolute;
+    top: 2150px;
   }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-
-  .resume-cointainer {
-    display: flex;
-    flex-direction: column;
-align-items: center;  }
-
-  .resume-h1 {
-    font-size: 80px;
+  .project-welcome {
+    font-size: 70px;
     color: #EBA70E;
     margin: 0;
+    margin-left: 25px;
     letter-spacing: 0.05em;
     text-shadow: rgb(196, 57, 29) 4px 2px 0px
+}
+.project-img {
+  height: 150px;
+  width: 250px;
+  margin-top: 0px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  border: #FFF5DE solid 3px;
+  border-radius: 5px;
+}
+.project-title {
+  margin-top: 0px;
+  font-size: 35px;
+  width: 50%;
+  margin-left: 120px;
+  color: rgb(196, 57, 29);
+  text-shadow: black 4px 1px 0
+}
+.projectDescription {
+  width: 50%;
+  margin-left: 150px;
+  }
+  .github-logo {
+    height: 60px;
+    width: 60px;
+    margin-top: 0px;
+    opacity: 0.9;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
   }
 
-  .resume-img {
-    height: 800px;
-    width: 600px;
-    align-items: center;
-    margin-top: 50px;
+  @media only screen and (max-width: 999px){
+    nav {
+      display: none;
+    }
   }
+
+  @media only screen and (max-width: 1499px){
+    nav {
+      width: 100%;
+      position: absolute;
+      top: 1500px;
+    }
+  }
+
+  @media only screen and (max-width: 1425px){
+    nav {
+      width: 100%;
+      position: absolute;
+      top: 1600px;
+    }
+  }
+
+  /* @media only screen and (max-width: 820px){
+    .welcomeText {
+      font-size: 150px;
+      text-shadow: rgb(196, 57, 29) 3px 2px 0
+    }
+    a img {
+      height: 100px;
+      width: 250px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 30px;
+      color: #EBA70E;
+      margin-top: 20px;
+      text-shadow: black 3px 2px 0
+    }
+    } */
