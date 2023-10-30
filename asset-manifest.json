@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d531684.css",
-    "main.js": "/static/js/main.1092b646.js",
+    "main.css": "/static/css/main.3cf95256.css",
+    "main.js": "/static/js/main.493aee3e.js",
     "static/js/787.c7d03c1d.chunk.js": "/static/js/787.c7d03c1d.chunk.js",
     "static/media/netlix-chill.png": "/static/media/netlix-chill.337b6f715c12434341b5.png",
     "static/media/lifetimes.png": "/static/media/lifetimes.3796ce1435c9decaa57e.png",
@@ -10,12 +10,12 @@
     "static/media/launch.png": "/static/media/launch.320c6cafea5fadfa96f6.png",
     "static/media/github-icon.png": "/static/media/github-icon.f260637be33e75188227.png",
     "index.html": "/index.html",
-    "main.5d531684.css.map": "/static/css/main.5d531684.css.map",
-    "main.1092b646.js.map": "/static/js/main.1092b646.js.map",
+    "main.3cf95256.css.map": "/static/css/main.3cf95256.css.map",
+    "main.493aee3e.js.map": "/static/js/main.493aee3e.js.map",
     "787.c7d03c1d.chunk.js.map": "/static/js/787.c7d03c1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d531684.css",
-    "static/js/main.1092b646.js"
+    "static/css/main.3cf95256.css",
+    "static/js/main.493aee3e.js"
   ]
 }
